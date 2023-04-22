@@ -1,0 +1,26 @@
+.content {
+	grid-area: content;
+	background-color: forestgreen;
+	height: calc(100vh - 100px);
+	overflow: auto;
+	padding: 24px;
+
+	&::-webkit-scrollbar {
+		width: 10px;
+		height: 10px;
+		background-color: transparent;
+	}
+
+	&::-webkit-scrollbar-corner {
+		background: transparent;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: transparent;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: rgba(0, 0, 0, 0.4);
+		border-radius: 10px;
+	}
+}
