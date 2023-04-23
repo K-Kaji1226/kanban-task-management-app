@@ -9,3 +9,11 @@
 	max-width: 1440px;
 	min-height: 100vh;
 }
+
+.is-hide {
+	grid-template-columns: 0 1fr;
+	/*grid-template-areas:
+		"nav header"
+	 	"nav content";
+	// grid-template-columns: 1fr;*/
+}

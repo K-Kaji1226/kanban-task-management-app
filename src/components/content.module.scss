@@ -4,6 +4,7 @@
 	height: calc(100vh - 100px);
 	overflow: auto;
 	padding: 24px;
+	position: relative;
 
 	&::-webkit-scrollbar {
 		width: 10px;
@@ -23,4 +24,10 @@
 		background-color: rgba(0, 0, 0, 0.4);
 		border-radius: 10px;
 	}
+}
+
+.button {
+	position: fixed;
+	left: 0;
+	bottom: 100px;
 }

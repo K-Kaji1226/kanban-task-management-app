@@ -1,9 +1,9 @@
 import { Content } from "@/components/content";
 
-export default function Home() {
+export default function Home(props) {
 	return (
 		<>
-			<Content />
+			<Content isHide={props.isHide} onShow={props.onToggleNav} />
 		</>
 	);
 }
