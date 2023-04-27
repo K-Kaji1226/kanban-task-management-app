@@ -13,12 +13,13 @@ export default function App({ Component, pageProps }) {
 	const toggleShowNavHandler = useCallback(() => {
 		setIsHideNav((prev) => !prev);
 	}, [isHideNav]);
+
 	return (
 		<div
 			className={`${jakarta.className} wrapper ${isHideNav ? "is-hide" : null}`}
 		>
 			<Navigation onToggleNav={toggleShowNavHandler} isHide={isHideNav} />
-			<Header />
+			<Header isHide={isHideNav} />
 			<Component
 				{...pageProps}
 				isHide={isHideNav}

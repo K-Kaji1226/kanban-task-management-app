@@ -1,5 +1,8 @@
+import { memo } from "react";
+
 import styles from "@/components/content.module.scss";
-export const Content = (props) => {
+export const Content = memo(() => {
+	console.log("contents");
 	return (
 		<div
 			className={styles.content}
@@ -8,4 +11,4 @@ export const Content = (props) => {
 			content
 		</div>
 	);
-};
+});
